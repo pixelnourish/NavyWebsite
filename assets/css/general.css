@@ -1,0 +1,208 @@
+/*	------------------------------------
+	Navy - General styles
+	------------------------------------
+	Desc:		stylesheet
+	File:		general.css
+	Version:	1.0
+	Created:	March 20, 2013
+	Author:		Kate Payton 
+				@ www.pixelnourish.com
+	------------------------------------	*/
+
+.clear {
+	height: 0px !important;
+	line-height: 0 !important; /* if causing problems, remove */
+	clear: both !important;
+	font-size: 1px !important;
+	float: none !important;
+	padding: 0px !important;
+	margin: 0px !important;
+	width: auto !important;
+	display: block !important;
+	visibility: hidden !important;
+	overflow: hidden !important;
+}
+
+/* -------------------------------------
+	1. Typography
+   ------------------------------------- */
+html,
+body { font-size: 0.9375em /* RESET FONT SIZE TO 15PX */;	}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #334b6d;
+	font-family: 'akzidenz-grotesk_std_regulaRg', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin: 0 0 1.1em 0;
+	line-height: 1.2em;
+}
+h1, h2 { font-family: 'akzidenz-grotesk_std_regulaRg', Helvetica, Arial, sans-serif; }
+h3, h4, h5, h6 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+h3 strong, h4 strong, h5 strong, h6 strong,
+.h3 strong, .h4 strong, .h5 strong, .h6 strong {
+	font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+h1,
+.h1 {
+	font-family: 'akzidenz-grotesk_std_regulaRg', Helvetica, Arial, sans-serif;
+	font-size: 34px;
+	font-weight: normal;
+}
+h1 strong {
+	font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	font-weight: normal; /* bold font overwrites */
+}
+	#home header h1 {
+		color: #fff;
+		font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
+		font-size: 60px;
+		line-height: 68px;
+		margin-bottom: 20px;
+	}
+h2 {
+	font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+}
+.h2 {
+	font-size: 34px;
+	font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+	#home header h2,
+	#home header .hero-unit a {
+		color: #fff;
+		font-family: 'akzidenz-grotesk_std_regulaRg', Helvetica, Arial, sans-serif;
+		font-size: 34px;
+		line-height: 40px;
+		margin-bottom: 20px;
+	}
+h3,
+.h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+h4,
+.h4 { font-size: 16px; }
+h5, .h5 { }
+h6, .h6 { }
+
+header hgroup { width: 890px; }
+
+a { color: #ff2952; text-decoration: none; }
+a:hover { color: #ff2952; text-decoration: underline;  }
+a.tel { color: #334b6d; }
+a.tel:hover { color: #334b6d; text-decoration: none; }
+
+p {
+	font-size: 15px; /* overwrite bootstrap */
+	line-height: 1.6em /* 24px */;
+	margin: 0 0 0.95em 0;
+}
+
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+/* -------------------------------------
+	2. Structure
+   ------------------------------------- */
+html {
+	background: #f3efe4 url(../img/bg_tri-light.png) repeat center 0;
+}
+html#home { background-color: #f3efe4;}
+html#contact { background-color: #efe9db;}
+body {
+	background: transparent;
+	color: #838178;
+	font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+
+header {
+	background: url(../img/bg_header-beige.gif) no-repeat center;
+	position: relative;
+}
+	#home header {
+		background: url(../img/bg_header-home.png) no-repeat center 0;
+		color: #fff;
+		height: 882px;
+		z-index: 20;
+	}
+	#home header a {
+		color: #fff;
+	}
+
+#content {
+	position: relative;
+}
+	#contact #content {
+		background: url(../img/gr_footer-blue.gif) no-repeat center bottom;
+		padding: 120px 0 126px;
+	}
+	#home #content {
+		margin: -378px 0 0;
+		padding: 378px 0 0;
+		height: 375px;
+	}
+#home footer {
+	background: url(../img/gr_footer-blue-beige_home.png) no-repeat center 0;
+	min-height: 483px;
+	margin: -250px 0 0;
+	padding: 250px 0 0;
+	position: relative;
+	z-index: 30;
+}
+
+
+/* -------------------------------------
+	3. Page IDs
+   ------------------------------------- */
+#contact header {
+	background: url(../img/bg_header-beige.gif) no-repeat center;
+	min-height: 690px;
+	padding: 0 0 193px;
+	position: relative;
+}
+#about header {
+	background: url(../img/bg_header-about.jpg) no-repeat center 0;
+	position: relative;
+}
+	#about header .bg {
+		background: url(../img/bg_header-about_divide_sml-tri.png) no-repeat center bottom;
+		min-height: 756px;
+		padding: 0 0 379px;
+	}
+#about #content {
+	background: #f3efe4 url(../img/bg_tri-light_sml-grid.gif) repeat center 63px;
+	padding: 0 0 193px;
+}
+	#about header .bg {
+		background: url(../img/bg_content-beige_divide.gif no-repeat center bottom;
+		min-height: 690px;
+	}
+
+/* -------------------------------------
+	4. Responsive structure
+   ------------------------------------- */
+/* small responsive adjustments - large to small */
+@media (max-width: 1200px) {
+	.overflow { overflow: hidden; }
+}
+@media (max-width: 1200px) and (min-width: 768px) {
+}
+@media (max-width: 1080px) {
+	html { background-position: 180px 0; }
+	body { overflow-x: auto; }
+	header { background-position: -360px 0; }
+	#content { background-position: -360px bottom; }
+}
+@media (max-width: 767px) {
+	body { padding: 0; }
+}
+
+
+

@@ -1,0 +1,453 @@
+/*	------------------------------------
+	Navy - General styles
+	------------------------------------
+	Desc:		stylesheet
+	File:		all-styles.css
+	Version:	1.0
+	Created:	March 20, 2013
+	Author:		Kate Payton 
+				@ www.pixelnourish.com
+	------------------------------------
+	Table of contents:
+	1. Miscellaneous
+	2. Buttons & Icons
+	3. Header
+	4. Content
+	5. Specific items
+	6. Page IDs
+	7. Bootstrap restyling
+	------------------------------------	*/
+
+
+/* -------------------------------------
+	1. Miscellaneous
+   ------------------------------------- */
+.mt05 { margin-top: 5px !important; }
+.mt10 { margin-top: 10px !important; }
+
+.mr05 { margin-right: 5px !important; }
+.mr10 { margin-right: 10px !important; }
+
+.ltr { text-align: left; }
+.rtl { text-align: right; }
+
+
+/* -------------------------------------
+	2. Buttons & Icons
+   ------------------------------------- */
+.ico {
+	background: url(../img/ico_sprite.png) no-repeat;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -999em;
+	vertical-align: text-top;
+}
+	.ico_gpin {
+		background-position: 0 0;
+		height: 22px;
+		margin: 0 5px 0 0;
+		width: 12px;
+	}
+.sm.ico {
+	background: url(../img/ico_social.png) no-repeat;
+}
+	.ico_linkedin {
+		background-position: 0 0;
+		height: 35px;
+		margin: 0 5px 0 0;
+		width: 35px;
+	}
+
+
+/* -------------------------------------
+	3. Header
+   ------------------------------------- */
+.logo,
+.navbar .logo {
+	background: url(../img/gr_navy-logo.png) no-repeat 0 0;
+	display: block;
+	height: 44px;
+	margin: 0 25px 0 0;
+	overflow: hidden;
+	padding: 0;
+	text-indent: -999em;
+	width: 104px;
+}
+#home .navbar .logo { background-image: url(../img/gr_navy-logo_invert.png); }
+
+/* -------------------------------------
+	4. Content
+   ------------------------------------- */
+/* styling for random lines */
+[class*="line_"] {
+	background: no-repeat 0 0;
+	display: block;
+	position: absolute;
+	z-index: 100;
+}
+	.line_pink01 {
+		background-image: url(../img/gr_stripe-pink-gt_01.png);
+		height: 193px;
+		 top: 693px;
+		 left: -360px;
+		width: 541px;
+	}
+	.line_navy01 {
+		background-image: url(../img/gr_stripe-navy-lt_01.png);
+		height: 317px;
+		 top: -190px;
+		 right: -253px;
+		width: 901px;
+	}
+.container { position: relative; }
+#home #content .container {
+	padding-top: 108px;
+}
+#home #content .container .row {
+	position: relative;
+	z-index: 40;
+}
+
+#contact #content {
+	padding-top: 125px;
+	position: relative;
+	z-index: 50;
+}
+	#contact #content .title {
+		min-height: 125px;
+	}
+		#contact #content .title h3 {
+			line-height: 1em;
+		}
+
+.big-blip {
+	background: #ff2952;
+	 -webkit-border-radius: 100px;
+	 -moz-border-radius: 100px;
+	border-radius: 100px;
+	 -webkit-box-shadow: 0 0 0 15px rgba(255,41,82,0.3);
+	 -moz-box-shadow: 0 0 0 15px rgba(255,41,82,0.3);
+	box-shadow: 0 0 0 15px rgba(255,41,82,0.3) /* back-up: #f7b3b8 */;
+	display: block;
+	height: 145px;
+	margin: 50px 0 -5px 448px;
+	padding: 20px;
+	width: 145px;
+	
+	 -webkit-transition: all 0.2s ease-in-out;
+	 -moz-transition: all 0.2s ease-in-out;
+	 -o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+	.big-blip:hover {
+		 -webkit-box-shadow: 0 0 0 18px rgba(255,41,82,0.3);
+		 -moz-box-shadow: 0 0 0 18px rgba(255,41,82,0.3);
+		box-shadow: 0 0 0 18px rgba(255,41,82,0.3);
+	}
+	.big-blip img {
+		display: block;
+		margin: 53px auto 0;
+	}
+
+
+/* -------------------------------------
+	5. Specific Items
+   ------------------------------------- */
+/* branch timeline pathway on about page */
+#path {
+	background: url(../img/gr_path-start.gif) no-repeat center 0;
+	margin: -65px 10px 0 20px;
+	padding: 189px 0 0;
+	width: 1040px;
+}
+	#path > .inner {
+		background: url(../img/gr_path-lines.gif) repeat-y center 0;
+		min-height: 862px;
+		position: relative;
+	}
+		#path aside {
+			position: absolute;
+			 top: 340px;
+			 left: 250px;
+			width: 540px;
+		}
+		#path section { position: absolute; }
+			#path .who {
+				color: #334b6d;
+				font-weight: bold;
+				line-height: 24px;
+				width: 150px;
+			}
+				#path .who h3 { margin: 0 0 5px; }
+				
+			#path ul {
+				list-style: none;
+				margin: 0;
+			}
+				#path li {
+					margin-top: 100px;
+					padding-bottom: 100px; /* using padding, to overcome margin overflow issue */
+					width: 130px /* 150px */;
+				}
+				#path li.l {
+					background: url(../img/ico_sprite.png) no-repeat -220px 6px;
+					margin-left: 10px;
+					padding-right: 20px;
+					text-align: right;
+				}
+				#path li.r {
+					background: url(../img/ico_sprite.png) no-repeat -380px 6px;
+					padding-left: 20px;
+				}
+					#path li:last-child { padding-bottom: 0; }
+		
+		/* Separate people's changes 
+			- all top's are # + -189px 	*/
+		#path .brett {
+			top: -150px;
+			width: 320px;
+		}
+			#path .brett .who { margin-left: 10px; }
+				#path .brett ul { margin-top: 37px; }
+					#path .brett li.l { margin-left: 10px; }
+					#path .brett li.r { margin-left: 161px; }
+					#path .brett li:first-child { padding-bottom: 113px; }
+					#path .brett li:nth-child(2) { padding-bottom: 111px; }
+					#path .brett li:nth-child(3) { padding-bottom: 91px; }
+		
+		#path .ollie {
+			top: -90px;
+			left: 160px;
+			width: 360px;
+		}
+			#path .ollie .who {
+				margin-left: 180px;
+				width: 190px;
+			}
+				#path .ollie ul { margin-top: 41px; }
+					#path .ollie li.l { margin-left: 30px; }
+					#path .ollie li.r { margin-left: 181px; }
+					#path .ollie li:first-child { padding-bottom: 0; }
+					#path .ollie li:nth-child(2) { margin-top: 65px; padding-bottom: 92px; }
+					#path .ollie li:nth-child(3) { padding-bottom: 111px; }
+		
+		#path .marc {
+			top: -195px;
+			left: 520px;
+			width: 360px;
+		}
+			#path .marc .who {
+				margin-left: -10px;
+				width: 190px;
+			}
+				#path .marc ul { margin-top: 43px; }
+					#path .marc li.l { margin-left: 30px; }
+					#path .marc li.r { margin-left: 181px; }
+					#path .marc li:first-child { padding-bottom: 0; }
+					#path .marc li:nth-child(2) { margin-top: 66px; padding-bottom: 344px; }
+					#path .marc li.adj {
+						background-position: -190px 6px;
+						margin-left: 0;
+						padding-bottom: 0;
+						width: 160px;
+					}
+					#path .marc li:last-child { margin-top: 66px; }
+		
+		#path .michael {
+			top: -255px;
+			left: 880px;
+			width: 170px;
+		}
+			#path .michael .who {}
+				#path .michael ul { margin-top: 40px; }
+					#path .michael li.l {}
+					#path .michael li.r { margin-left: 1px; }
+					#path .michael li:first-child { padding-bottom: 239px; }
+					#path .michael li:nth-child(2) { padding-bottom: 91px; }
+
+	#path .base {
+		background: url(../img/gr_path-group.png) no-repeat center 0;
+		padding: 303px 0 0;
+	}
+		#path .base > .inner {
+			background: url(../img/gr_path-line.png) repeat-y 0 0;
+			margin: 0 50px 0 160px;
+			padding: 15px 0 0;
+		}
+			#path .base h4 {
+				float: left;
+				padding: 0 50px 0 20px;
+				text-align: right;
+				width: 470px;
+			}
+			#path .base .linkedin {
+				font-size: 1.071em /* 15px */;
+				float: left;
+				line-height: 1.200em /* 18px */;
+				padding: 30px 0 0 45px;
+				text-align: left;
+				width: 245px;
+			}
+				#path .base .linkedin:hover {
+					text-decoration: none;
+				}
+				#path .base .linkedin .ico_linkedin {
+					float: left;
+				}
+				#path .base .linkedin span {
+					color: #838178;
+				}
+					#path .base .linkedin .psu_link {
+						color: #ff2952;
+					}
+
+		
+/* grid map on contact page */
+#map {
+	background: url(../img/gr_map.png) no-repeat center;
+	display: block;
+	height: 882px;
+	margin: 0 -999em;
+	padding: 0 999em;
+	position: relative;
+	width: 100%;
+}
+	#map .tooltip {
+		background: url(../img/gr_bg-tooltip.png) right bottom;
+		display: block;
+		padding: 0 0 24px;
+		position: absolute;
+		 top: -20px;
+		 right: 50%;
+		width: 342px;
+	}
+		#map .tooltip > .inner {
+			background: url(../img/gr_bg-tooltip.png) 0 0;
+			padding: 25px 20px 20px;
+			width: auto;
+		}
+
+
+/* -------------------------------------
+	6. Page IDs
+   ------------------------------------- */
+/* focused positioning for random lines */
+#contact .line_pink01 {
+	 top: 693px;
+	 left: -360px;
+}
+#about .line_pink01 {
+	 top: 878px;
+	 left: -360px;
+}
+
+
+/* -------------------------------------
+	7. Bootstrap Restyling
+   ------------------------------------- */
+/* scaffolding - overwrite */
+.container, 
+.navbar-static-top .container, 
+.navbar-fixed-top .container, 
+.navbar-fixed-bottom .container {
+	width: 1080px;
+}
+.row { margin-left: -20px; }
+[class*="span"] { margin-left: 20px; }
+.span12 { width: 1080px; }
+.span11 { width: 1070px; }
+.span10 { width: 970px; }
+.span9 { width: 870px; }
+.span8 { width: 770px; }
+.span7 { width: 670px; }
+.span6 { width: 570px; }
+.span5 { width: 470px; }
+.span4 { width: 340px; }
+.span3 { width: 270px; }
+.span2 { width: 170px; }
+.span1 { width: 70px; }
+
+/* general styling */
+.hero-unit { /* used for the large intro areas */
+	background: none;
+	font-size: 15px;
+	line-height: 1em;
+	padding: 0 0 50px;
+}
+#home .hero-unit { 
+	max-width: 800px;
+}
+	.hero-unit h1 {
+		color: #334b6d;
+		font-size: 2.400em /* 36px */;
+		line-height: 1.176em;
+	}
+	#home header .hero-unit a {
+		font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
+		text-decoration: underline;
+	}
+
+/* navigation */
+.navbar {
+	margin-top: 56px;
+	margin-bottom: 115px;
+}
+	.navbar-inner {
+		background: none;
+		border: none;
+		 -webkit-border-radius: 0;
+		 -moz-border-radius: 0;
+		border-radius: 0;
+		 -webkit-box-shadow: none;
+		 -moz-box-shadow: none;
+		box-shadow: none;
+		filter: none;
+		min-height: 45px;
+		padding: 0;
+	}
+		.navbar .nav > li {
+			margin: 6px 0 7px 25px;
+		}
+			.navbar .nav > li > a {
+				 -webkit-border-radius: 3px;
+				 -moz-border-radius: 3px;
+				border-radius: 3px;
+				color: #ff2952;
+				font-size: 1em;
+				font-weight: bold;
+				line-height: 1em;
+				padding: 8px 9px 9px;
+				text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+			}
+			.navbar .nav > li > a:focus, 
+			.navbar .nav > li > a:hover,
+			
+			.navbar .nav > .active > a, 
+			.navbar .nav > .active > a:hover, 
+			.navbar .nav > .active > a:focus {
+				background: #e4ded1;
+				background: rgba(131,129,120,0.1);
+				 -webkit-box-shadow: none;
+				 -moz-box-shadow: none;
+				box-shadow: none;
+				color: #ff2952;
+			}
+			
+			#home .navbar .nav > li > a:focus, 
+			#home .navbar .nav > li > a:hover,
+			#home .navbar .nav > .active > a, 
+			#home .navbar .nav > .active > a:hover, 
+			#home .navbar .nav > .active > a:focus,
+			
+			#about .navbar .nav > li > a:focus, 
+			#about .navbar .nav > li > a:hover,
+			#about .navbar .nav > .active > a, 
+			#about .navbar .nav > .active > a:hover, 
+			#about .navbar .nav > .active > a:focus {
+				background: #beb398;
+				background: rgba(0,0,0,0.1);
+			}
+
+
+
+
