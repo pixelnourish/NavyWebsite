@@ -92,12 +92,27 @@
 		 left: -360px;
 		width: 541px;
 	}
+	.line_pink02 {
+		background-image: url(../img/gr_stripe-pink-gt_02.png);
+		height: 380px;
+		 top: 0;
+		 left: -360px;
+		width: 1082px;
+	}
 	.line_navy01 {
 		background-image: url(../img/gr_stripe-navy-lt_01.png);
 		height: 317px;
 		 top: -190px;
-		 right: -253px;
+		 right: -360px;
 		width: 901px;
+	}
+	.line_teal01 {
+		background-image: url(../img/gr_stripe-teal-glt_01.png);
+		height: 381px;
+		 bottom: -180px;
+		 right: -360px;
+		width: 1441px;
+		z-index: 90;
 	}
 .container { position: relative; }
 #home #content .container {
@@ -130,14 +145,15 @@
 	box-shadow: 0 0 0 15px rgba(255,41,82,0.3) /* back-up: #f7b3b8 */;
 	display: block;
 	height: 145px;
-	margin: 50px 0 -5px 448px;
+	margin: 110px 0 -5px 448px;
 	padding: 20px;
-	width: 145px;
-	
+	position: relative;
 	 -webkit-transition: all 0.2s ease-in-out;
 	 -moz-transition: all 0.2s ease-in-out;
 	 -o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	width: 145px;
+	z-index: 100;
 }
 	.big-blip:hover {
 		 -webkit-box-shadow: 0 0 0 18px rgba(255,41,82,0.3);
@@ -153,6 +169,31 @@
 /* -------------------------------------
 	5. Specific Items
    ------------------------------------- */
+
+.img-heads {
+	height: 756px;
+	overflow: hidden;
+}
+	.img-heads .head {
+		max-width: 360px;
+		width: 360px;
+	}
+hgroup [class*="h"] {
+	margin: 0 0 15px;
+}
+.columned {}
+	.columned .span10 {
+		min-height: 260px;
+	}
+	.columned .span4 {
+		min-height: 756px;
+	}
+	.v-offset1 {
+		margin-top: 126px;
+	}
+		.columned .head {
+			margin: 0 0 30px;
+		}
 /* branch timeline pathway on about page */
 #path {
 	background: url(../img/gr_path-start.gif) no-repeat center 0;
@@ -366,6 +407,18 @@
 .span3 { width: 270px; }
 .span2 { width: 170px; }
 .span1 { width: 70px; }
+
+.offset11 { margin-left: 1110px; }
+.offset10 { margin-left: 1010px; }
+.offset9 { margin-left: 910px; }
+.offset8 { margin-left: 810px; }
+.offset7 { margin-left: 710px; }
+.offset6 { margin-left: 610px; }
+.offset5 { margin-left: 510px; }
+.offset4 { margin-left: 380px; }
+.offset3 { margin-left: 310px; }
+.offset2 { margin-left: 210px; }
+.offset1 { margin-left: 110px; }
 
 /* general styling */
 .hero-unit { /* used for the large intro areas */

@@ -41,6 +41,7 @@ h3, h4, h5, h6 {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: bold;
 }
+.h1 strong,
 h3 strong, h4 strong, h5 strong, h6 strong,
 .h3 strong, .h4 strong, .h5 strong, .h6 strong {
 	font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
@@ -88,7 +89,7 @@ h3,
 }
 h4,
 .h4 { font-size: 16px; }
-h5, .h5 { }
+h5, .h5 { font-size: 18px; }
 h6, .h6 { }
 
 header hgroup { width: 890px; }
@@ -110,44 +111,55 @@ ol { list-style: decimal; }
 /* -------------------------------------
 	2. Structure
    ------------------------------------- */
-html {
-	background: #f3efe4 url(../img/bg_tri-light.png) repeat center 0;
-}
-html#home { background-color: #f3efe4;}
-html#contact { background-color: #efe9db;}
+html { background: #f3efe4 url(../img/bg_tri-light.png) repeat center 0; }
 body {
 	background: transparent;
 	color: #838178;
 	font-family: Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
 }
-
 header {
 	background: url(../img/bg_header-beige.gif) no-repeat center;
 	position: relative;
 }
-	#home header {
-		background: url(../img/bg_header-home.png) no-repeat center 0;
-		color: #fff;
-		height: 882px;
-		z-index: 20;
+#content,
+#subcontent { position: relative; }
+	#content .bg > .container,
+	#subcontent .bg > .container {
+		z-index: 40;
 	}
-	#home header a {
-		color: #fff;
-	}
-
-#content {
-	position: relative;
-}
 	#contact #content {
-		background: url(../img/gr_footer-blue.gif) no-repeat center bottom;
+		background: url(../img/gr_footer-blue_contact.gif) no-repeat center bottom;
 		padding: 120px 0 126px;
 	}
-	#home #content {
-		margin: -378px 0 0;
-		padding: 378px 0 0;
-		height: 375px;
+#subcontent {
+	background: #efe9db url(../img/bg_tri-light.png) repeat center 127px;
+	padding: 0 0 239px;
+}
+	#subcontent .bg {
+		background: transparent url(../img/bg_content-beige_divide.gif) no-repeat center top;
+		padding: 623px 0 0;
+		margin: -646px 0 0;
 	}
+
+
+/* -------------------------------------
+	3. Page IDs
+   ------------------------------------- */
+html#home { background-color: #f3efe4;}
+html#contact { background-color: #efe9db;}
+#home header {
+	background: url(../img/bg_header-home.png) no-repeat center 0;
+	color: #fff;
+	height: 882px;
+	z-index: 20;
+}
+	#home header a { color: #fff; }
+#home #content {
+	margin: -378px 0 0;
+	padding: 378px 0 0;
+	height: 375px;
+}
 #home footer {
 	background: url(../img/gr_footer-blue-beige_home.png) no-repeat center 0;
 	min-height: 483px;
@@ -155,17 +167,6 @@ header {
 	padding: 250px 0 0;
 	position: relative;
 	z-index: 30;
-}
-
-
-/* -------------------------------------
-	3. Page IDs
-   ------------------------------------- */
-#contact header {
-	background: url(../img/bg_header-beige.gif) no-repeat center;
-	min-height: 690px;
-	padding: 0 0 193px;
-	position: relative;
 }
 #about header {
 	background: url(../img/bg_header-about.jpg) no-repeat center 0;
@@ -176,6 +177,14 @@ header {
 		min-height: 756px;
 		padding: 0 0 379px;
 	}
+#about footer {
+	background: url(../img/gr_footer-blue.png) no-repeat center bottom;
+	min-height: 756px;
+	margin: -74px 0 0;
+	padding: 0;
+	position: relative;
+	z-index: 30;
+}
 #about #content {
 	background: #f3efe4 url(../img/bg_tri-light_sml-grid.gif) repeat center 63px;
 	padding: 0 0 193px;
@@ -184,6 +193,12 @@ header {
 		background: url(../img/bg_content-beige_divide.gif no-repeat center bottom;
 		min-height: 690px;
 	}
+#contact header {
+	background: url(../img/bg_header-beige.gif) no-repeat center;
+	min-height: 690px;
+	padding: 0 0 193px;
+	position: relative;
+}
 
 /* -------------------------------------
 	4. Responsive structure
