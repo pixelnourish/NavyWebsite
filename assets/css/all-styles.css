@@ -439,6 +439,17 @@ hgroup [class*="h"] {
 		font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
 		text-decoration: underline;
 	}
+#services .hero-unit {
+	position: relative;
+}
+	#services .hero-unit h1 {
+		width: 550px;
+	}
+	#services .hero-unit .repos {
+		position: absolute;
+		 top: 3px;
+		 right: 0;
+	}
 
 /* navigation */
 .navbar {

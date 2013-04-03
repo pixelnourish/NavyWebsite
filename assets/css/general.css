@@ -129,7 +129,7 @@ header {
 		z-index: 40;
 	}
 	#contact #content {
-		background: url(../img/gr_footer-blue_contact.gif) no-repeat center bottom;
+		background: url(../img/bg_footer-blue_contact.gif) no-repeat center bottom;
 		padding: 120px 0 126px;
 	}
 #subcontent {
@@ -161,7 +161,7 @@ html#contact { background-color: #efe9db;}
 	height: 375px;
 }
 #home footer {
-	background: url(../img/gr_footer-blue-beige_home.png) no-repeat center 0;
+	background: url(../img/bg_footer-blue-beige_home.png) no-repeat center 0;
 	min-height: 483px;
 	margin: -250px 0 0;
 	padding: 250px 0 0;
@@ -177,27 +177,52 @@ html#contact { background-color: #efe9db;}
 		min-height: 756px;
 		padding: 0 0 379px;
 	}
-#about footer {
-	background: url(../img/gr_footer-blue.png) no-repeat center bottom;
-	min-height: 756px;
-	margin: -74px 0 0;
-	padding: 0;
-	position: relative;
-	z-index: 30;
-}
 #about #content {
 	background: #f3efe4 url(../img/bg_tri-light_sml-grid.gif) repeat center 63px;
 	padding: 0 0 193px;
 }
 	#about header .bg {
-		background: url(../img/bg_content-beige_divide.gif no-repeat center bottom;
+		background: url(../img/bg_content-beige_divide.gif) no-repeat center bottom;
 		min-height: 690px;
+	}
+#services header {
+	background: url(../img/bg_header-beige02.png) no-repeat center 0;
+	height: 757px;
+	position: relative;
+	z-index: 20;
+}
+	#services header .bg {
+		background: none;
+	}
+#services #content {
+	height: 834px;
+	margin-top: -80px;
+}
+	#services #content .container {
+		position: relative;
+		z-index: 30;
 	}
 #contact header {
 	background: url(../img/bg_header-beige.gif) no-repeat center;
 	min-height: 690px;
 	padding: 0 0 193px;
 	position: relative;
+}
+/* same footer */
+#about footer,
+#services footer {
+	background: no-repeat center bottom;
+	min-height: 756px;
+	padding: 0;
+	position: relative;
+	z-index: 30;
+}
+#about footer {
+	background-image: url(../img/bg_footer-blue-dk.png);
+	margin: -74px 0 0;
+}
+#services footer {
+	background-image: url(../img/bg_footer-blue-lt.png);
 }
 
 /* -------------------------------------
