@@ -10,15 +10,14 @@ Pages completed so far:
 - index.html
 - about.html
 - contact.html
-- our-services.html
+- services.html
 
 Working on:
-[nill]
+- services/[detail] (x3)
 
 To work on still:
 - case-studies.html
 - case-studies/catch-on.html
 - case-studies/medibank.html
 - case-studies/whispir.html
-- our-services/detail.html (x3)
 - working-with-navy.html

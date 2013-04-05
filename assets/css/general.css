@@ -105,8 +105,17 @@ p {
 	margin: 0 0 0.95em 0;
 }
 
-ul { list-style: disc; }
+/* ul { list-style: disc; } */
 ol { list-style: decimal; }
+
+ul {
+	list-style: none;
+	margin: 0 0 25px;
+}
+	ul li {
+		background: url(../img/ico_sprite.png) no-repeat -380px 6px;
+		padding: 0 0 15px 30px;
+	}
 
 /* -------------------------------------
 	2. Structure
@@ -181,10 +190,10 @@ html#contact { background-color: #efe9db;}
 	background: #f3efe4 url(../img/bg_tri-light_sml-grid.gif) repeat center 63px;
 	padding: 0 0 193px;
 }
-	#about header .bg {
+	/*#about header .bg {
 		background: url(../img/bg_content-beige_divide.gif) no-repeat center bottom;
 		min-height: 690px;
-	}
+	}*/
 #services header {
 	background: url(../img/bg_header-beige02.png) no-repeat center 0;
 	height: 757px;
@@ -202,6 +211,9 @@ html#contact { background-color: #efe9db;}
 		position: relative;
 		z-index: 30;
 	}
+#s-detail header {
+	background: none;
+}
 #contact header {
 	background: url(../img/bg_header-beige.gif) no-repeat center;
 	min-height: 690px;
