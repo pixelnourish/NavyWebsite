@@ -11,9 +11,10 @@ Pages completed so far:
 - about.html
 - contact.html
 - services.html
+- services/[detail] (x3)
 
 Working on:
-- services/[detail] (x3)
+[nill]
 
 To work on still:
 - case-studies.html

@@ -57,6 +57,33 @@
 		margin: 0 5px 0 0;
 		width: 35px;
 	}
+.logos {
+	background: url(../img/gr_logos.png) no-repeat;
+	display: block;
+	overflow: hidden;
+	margin: 0 0 18px;
+	text-indent: -999em;
+}
+	.logo_aus-gov {
+		background-position: 0 0;
+		height: 44px;
+		width: 166px;
+	}
+	.logo_medibank {
+		background-position: 0 -60px;
+		height: 33px;
+		width: 105px;
+	}
+	.logo_navy {
+		background-position: 0 -120px;
+		height: 37px;
+		width: 121px;
+	}
+	.logo_whispir {
+		background-position: 0 -240px;
+		height: 43px;
+		width: 92px;
+	}
 
 
 /* -------------------------------------
@@ -160,10 +187,46 @@
 		 -moz-box-shadow: 0 0 0 18px rgba(255,41,82,0.3);
 		box-shadow: 0 0 0 18px rgba(255,41,82,0.3);
 	}
-	.big-blip img {
+	.big-blip .logos {
 		display: block;
 		margin: 53px auto 0;
 	}
+
+.info { min-height: 1010px; }
+[class*="sidebar_"] {
+	background: #949188 url(../img/bg_sidebar.png) no-repeat 0 bottom;
+	border-radius: 5px;
+	display: block;
+}
+	[class*="sidebar_"] > .inner {
+		min-height: 325px;
+		padding: 27px 20px 40px;
+	}
+		[class*="sidebar_"] > .inner * {
+			color: #fff;
+			text-shadow: none;
+			margin: 0 0 20px;
+		}
+		[class*="sidebar_"] > .inner a {
+			color: #ffe77e;
+			text-decoration: underline;
+		}
+		[class*="sidebar_"] > .inner a:hover { color: #fff !important; }
+		[class*="sidebar_"] .gr {
+			margin: 30px 0 0;
+		}
+	
+	.sidebar_vision {
+		background-color: #00939c;
+		background-position: -360px bottom;
+	}
+		.sidebar_vision a { color: #80e3ea !important; }
+	
+	.sidebar_detail {
+		background-color: #1b7ebd;
+		background-position: -720px bottom;
+	}
+		.sidebar_detail a { color: #9bdbec !important; }
 
 
 /* -------------------------------------
@@ -462,7 +525,7 @@ hgroup [class*="h"] {
 	margin-top: 56px;
 	margin-bottom: 115px;
 }
-#s-detail .navbar { margin-bottom: 55px; }
+#s-detail .navbar { margin-bottom: 48px; }
 	.navbar-inner {
 		background: none;
 		border: none;

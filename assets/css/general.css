@@ -27,14 +27,19 @@
 	1. Typography
    ------------------------------------- */
 html,
-body { font-size: 0.9375em /* RESET FONT SIZE TO 15PX */;	}
+body {
+	font-size: 0.9375em /* RESET FONT SIZE TO 15PX */;
+	font-family: Helvetica, Arial, sans-serif;
+}
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #334b6d;
 	font-family: 'akzidenz-grotesk_std_regulaRg', Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	margin: 0 0 1.1em 0;
 	line-height: 1.2em;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
 }
 h1, h2 { font-family: 'akzidenz-grotesk_std_regulaRg', Helvetica, Arial, sans-serif; }
 h3, h4, h5, h6 {
@@ -49,6 +54,7 @@ h3 strong, h4 strong, h5 strong, h6 strong,
 }
 h1,
 .h1 {
+	color: #334b6d;
 	font-family: 'akzidenz-grotesk_std_regulaRg', Helvetica, Arial, sans-serif;
 	font-size: 34px;
 	font-weight: normal;
@@ -87,10 +93,15 @@ h3,
 	font-size: 18px;
 	font-weight: bold;
 }
+	[class*="sidebar_"] .h3 {
+		font-size: 24px;
+		font-family: 'HelveticaBold', Helvetica, Arial, sans-serif;
+		line-height: 1.25em;
+	}
 h4,
 .h4 { font-size: 16px; }
 h5, .h5 { font-size: 18px; }
-h6, .h6 { }
+h6, .h6 { font-size: 15px }
 
 header hgroup { width: 890px; }
 
@@ -151,6 +162,20 @@ header {
 		margin: -646px 0 0;
 	}
 
+#s-detail [class*="sidebar_"] {
+	float: right;
+	margin: 0;
+	width: 360px;
+}
+
+footer {
+	background: url(../img/bg_footer-blue-dk.png) no-repeat center bottom;
+	min-height: 756px;
+	padding: 0;
+	position: relative;
+	z-index: 30;
+}
+
 
 /* -------------------------------------
 	3. Page IDs
@@ -177,6 +202,7 @@ html#contact { background-color: #efe9db;}
 	position: relative;
 	z-index: 30;
 }
+
 #about header {
 	background: url(../img/bg_header-about.jpg) no-repeat center 0;
 	position: relative;
@@ -194,6 +220,7 @@ html#contact { background-color: #efe9db;}
 		background: url(../img/bg_content-beige_divide.gif) no-repeat center bottom;
 		min-height: 690px;
 	}*/
+
 #services header {
 	background: url(../img/bg_header-beige02.png) no-repeat center 0;
 	height: 757px;
@@ -211,31 +238,20 @@ html#contact { background-color: #efe9db;}
 		position: relative;
 		z-index: 30;
 	}
-#s-detail header {
-	background: none;
-}
+#s-detail { background-color: #efe9db; }
+	#s-detail #wrap_inner { background: url(../img/bg_header-beige-lt.png) no-repeat center 0; }
+	#s-detail header { background: none; }
+	#s-detail #content { min-height: 1361px; }
+
 #contact header {
 	background: url(../img/bg_header-beige.gif) no-repeat center;
 	min-height: 690px;
 	padding: 0 0 193px;
 	position: relative;
 }
-/* same footer */
-#about footer,
-#services footer {
-	background: no-repeat center bottom;
-	min-height: 756px;
-	padding: 0;
-	position: relative;
-	z-index: 30;
-}
-#about footer {
-	background-image: url(../img/bg_footer-blue-dk.png);
-	margin: -74px 0 0;
-}
-#services footer {
-	background-image: url(../img/bg_footer-blue-lt.png);
-}
+
+#about footer { margin: -74px 0 0; }
+#services footer { background-image: url(../img/bg_footer-blue-lt.png); }
 
 /* -------------------------------------
 	4. Responsive structure
