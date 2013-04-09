@@ -221,6 +221,15 @@ html#contact { background-color: #efe9db;}
 		min-height: 690px;
 	}*/
 
+#work header {
+	background: url(../img/bg_header-beige_shorter.png) no-repeat center 0;
+	min-height: 632px;
+	position: relative;
+}
+#work #content {
+	padding: 60px 0;
+}
+
 #services header {
 	background: url(../img/bg_header-beige02.png) no-repeat center 0;
 	height: 757px;
@@ -232,7 +241,7 @@ html#contact { background-color: #efe9db;}
 	}
 #services #content {
 	height: 834px;
-	margin-top: -80px;
+	margin-top: -79px;
 }
 	#services #content .container {
 		position: relative;

@@ -228,10 +228,34 @@
 	}
 		.sidebar_detail a { color: #9bdbec !important; }
 
+#work #content .header {
+	height: 165px;
+}
+	#work #content .header p {
+	}
+	#work #content .header .h5 {
+		font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	#work #content .header .h1 {
+		font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
+		font-size: 34px;
+		margin-bottom: 15px;
+	}
+
 
 /* -------------------------------------
 	5. Specific Items
    ------------------------------------- */
+.polaroid {
+	background: #fff;
+	 -webkit-box-shadow: 0 1px 1px 1px rgba(145,142,132,0.4);
+	 -moz-box-shadow: 0 1px 1px 1px rgba(145,142,132,0.4);
+	box-shadow: 0 1px 1px 1px rgba(145,142,132,0.4) /* #918e84 */;
+	display: block;
+	padding: 20px;
+}
 
 .img-heads {
 	height: 756px;
@@ -445,6 +469,10 @@ hgroup [class*="h"] {
 	 top: 878px;
 	 left: -360px;
 }
+#work .line_pink01 {
+	 top: 441px;
+	 left: -360px;
+}
 
 
 /* -------------------------------------
@@ -491,7 +519,8 @@ hgroup [class*="h"] {
 	line-height: 1em;
 	padding: 0 0 50px;
 }
-#home .hero-unit { 
+#home .hero-unit,
+#work .hero-unit { 
 	max-width: 800px;
 }
 	.hero-unit h1 {
