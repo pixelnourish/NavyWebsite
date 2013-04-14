@@ -84,6 +84,7 @@ h2 {
 	font-size: 34px;
 	font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
 	font-weight: normal;
+	letter-spacing: -1px;
 }
 	#home header h2,
 	#home header .hero-unit a {
@@ -149,7 +150,7 @@ body {
 	overflow-x: hidden;
 }
 header {
-	background: url(../img/bg_header-beige.gif) no-repeat center;
+	background: transparent url(../img/bg_header-beige.gif) no-repeat center;
 	position: relative;
 }
 #content,
@@ -159,7 +160,7 @@ header {
 		z-index: 40;
 	}
 	#contact #content {
-		background: url(../img/bg_footer-blue_contact.gif) no-repeat center bottom;
+		background: transparent url(../img/bg_footer-blue_contact.gif) no-repeat center bottom;
 		padding: 120px 0 126px;
 	}
 #subcontent {
@@ -179,7 +180,7 @@ header {
 }
 
 footer {
-	background: url(../img/bg_footer-blue-dk.png) no-repeat center bottom;
+	background: transparent url(../img/bg_footer-blue-dk.png) no-repeat center bottom;
 	min-height: 756px;
 	padding: 0;
 	position: relative;
@@ -190,7 +191,7 @@ footer {
 /* -------------------------------------
 	3. Page IDs
    ------------------------------------- */
-html#home { background-color: #f3efe4;}
+html#home { background-color: #efe9db;}
 html#contact { background-color: #efe9db;}
 #home header {
 	background: url(../img/bg_header-home.png) no-repeat center 0;
@@ -205,9 +206,9 @@ html#contact { background-color: #efe9db;}
 	height: 375px;
 }
 #home footer {
-	background-image: url(../img/bg_footer-blue-beige_home.png) no-repeat;
-	min-height: 483px;
-	margin: -250px 0 0;
+	background-image: url(../img/bg_footer-blue-beige_home.png);
+	min-height: 507px;
+	/*margin: -250px 0 0;*/
 	padding: 250px 0 0;
 	position: relative;
 	z-index: 30;
@@ -217,7 +218,7 @@ html#contact { background-color: #efe9db;}
 	background-image: url(../img/bg_header-about.jpg);
 	position: relative;
 }
-	#about header .bg {
+	#about header > .bg {
 		background: url(../img/bg_header-about_divide_sml-tri.png) no-repeat center bottom;
 		min-height: 756px;
 		padding: 0 0 379px;
@@ -228,17 +229,12 @@ html#contact { background-color: #efe9db;}
 	background-position: center 63px;
 	padding: 0 0 193px;
 }
-	/*#about header .bg {
-		background: url(../img/bg_content-beige_divide.gif) no-repeat center bottom;
-		min-height: 690px;
-	}*/
 #case {
 	background-color: #f3efe4;
 	background-position: center 228px;
 }
-#case #content {
-	background: #efe9db url(../img/bg_tri-light.png) repeat center 251px;
-}
+#case #content { background: #efe9db url(../img/bg_tri-light.png) repeat center 0; }
+	#case #content > .bg { background: url(../img/bg_header-beige-lt.png) no-repeat center -253px; }
 #case header {
 	background-color: #efe9db;
 	background-image: none;
@@ -250,7 +246,7 @@ html#contact { background-color: #efe9db;}
 		padding: 379px 0 0;
 		z-index: 300;
 	}
-		#case #subcontent .bg {
+		#case #subcontent > .bg {
 			background: none;
 			margin: 0;
 			padding: 90px 0 0;
@@ -281,7 +277,7 @@ html#contact { background-color: #efe9db;}
 	position: relative;
 	z-index: 20;
 }
-	#services header .bg {
+	#services header > .bg {
 		background: none;
 	}
 #services #content {
@@ -293,7 +289,7 @@ html#contact { background-color: #efe9db;}
 		z-index: 30;
 	}
 #s-detail { background-color: #efe9db; }
-	#s-detail #wrap_inner { background-image: url(../img/bg_header-beige-lt.png); }
+	#s-detail #wrap_inner { background: url(../img/bg_header-beige-lt.png) no-repeat center 0; }
 	#s-detail header { background: none; }
 	#s-detail #content { min-height: 1361px; }
 
