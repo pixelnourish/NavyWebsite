@@ -30,6 +30,10 @@ html,
 body {
 	font-size: 0.9375em /* RESET FONT SIZE TO 15PX */;
 	font-family: Helvetica, Arial, sans-serif;
+	/*
+	font-family:'Helvetica W01 Roman';
+	font-family:'Helvetica W01 Bold';
+	*/
 }
 
 h1, h2, h3, h4, h5,
@@ -96,7 +100,7 @@ h3,
 }
 	[class*="sidebar_"] .h3 {
 		font-size: 24px;
-		font-family: 'HelveticaBold', Helvetica, Arial, sans-serif;
+		font-family: 'Helvetica W01 Bold', Helvetica, Arial, sans-serif;
 		line-height: 1.25em;
 	}
 h4,

@@ -644,6 +644,7 @@ hgroup [class*="h"] {
 	box-shadow: inset 0 -2px 0 rgba(0,0,0,0.2),
 				0 1px 5px -2px rgba(0,0,0,0.3);
 	color: #fff;
+	font-family: 'Helvetica W01 Bold', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 22px;
 	padding: 15px 30px;
