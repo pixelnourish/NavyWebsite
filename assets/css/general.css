@@ -228,6 +228,34 @@ html#contact { background-color: #efe9db;}
 		background: url(../img/bg_content-beige_divide.gif) no-repeat center bottom;
 		min-height: 690px;
 	}*/
+#case {
+	background-color: #f3efe4;
+	background-position: center 228px;
+}
+#case #content {
+	background: #efe9db url(../img/bg_tri-light.png) repeat center 251px;
+}
+#case header {
+	background-color: #efe9db;
+	background-image: none;
+}
+	#case #subcontent {
+		background: transparent url(../img/bg_content-case_divide.png) no-repeat center 0;
+		margin: -379px 0 0;
+		min-height: 80px /* 250px - margin at bottom of text included in bottom padding*/;
+		padding: 379px 0 0;
+		z-index: 300;
+	}
+		#case #subcontent .bg {
+			background: none;
+			margin: 0;
+			padding: 90px 0 0;
+		}
+#case footer {
+	background-image: url(../img/bg_footer-blue02.gif);
+	margin: -85px 0 0;
+	min-height: 882px;
+}
 
 #work header {
 	background-image: url(../img/bg_header-beige_shorter.png);

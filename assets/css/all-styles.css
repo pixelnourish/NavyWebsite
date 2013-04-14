@@ -9,18 +9,17 @@
 				@ www.pixelnourish.com
 	------------------------------------
 	Table of contents:
-	1. Miscellaneous
-	2. Buttons & Icons
-	3. Header
-	4. Content
-	5. Specific items
-	6. Page IDs
-	7. Bootstrap restyling
+	- Miscellaneous
+	- Buttons & Icons
+	- Header
+	- Content
+	- Specific items
+	- Bootstrap restyling
 	------------------------------------	*/
 
 
 /* -------------------------------------
-	1. Miscellaneous
+	Miscellaneous
    ------------------------------------- */
 .mt05 { margin-top: 5px !important; }
 .mt10 { margin-top: 10px !important; }
@@ -33,7 +32,7 @@
 
 
 /* -------------------------------------
-	2. Buttons & Icons
+	Buttons & Icons
    ------------------------------------- */
 .ico {
 	background: url(../img/ico_sprite.png) no-repeat;
@@ -112,7 +111,7 @@
 
 
 /* -------------------------------------
-	3. Header
+	Header
    ------------------------------------- */
 .logo,
 .navbar .logo {
@@ -128,7 +127,7 @@
 #home .navbar .logo { background-image: url(../img/gr_navy-logo_invert.png); }
 
 /* -------------------------------------
-	4. Content
+	Content
    ------------------------------------- */
 /* styling for random lines */
 [class*="line_"] {
@@ -181,11 +180,27 @@
 		width: 361px;
 		z-index: 90;
 	}
-.container { position: relative; }
-#home #content .container {
-	padding-top: 108px;
+/* focused positioning for random lines */
+#contact .line_pink01 {
+	 top: 693px;
+	 left: -360px;
 }
-#home #content .container .row {
+#about .line_pink01 {
+	 top: 943px;
+	 left: -360px;
+}
+#case .line_pink02 {
+	 top: 124px;
+	 left: -360px;
+}
+#work .line_pink01 {
+	 top: 441px;
+	 left: -360px;
+}
+
+.container { position: relative; }
+#home #content .container { padding-top: 108px; }
+#home #content .container .row { 
 	position: relative;
 	z-index: 40;
 }
@@ -313,7 +328,7 @@ blockquote.plain {
 
 
 /* -------------------------------------
-	5. Specific Items
+	Specific Items
    ------------------------------------- */
 .polaroid {
 	background: #fff;
@@ -520,6 +535,47 @@ hgroup [class*="h"] {
 						color: #ff2952;
 					}
 
+
+/* case studies tabbed content */
+#caseStudies {
+	display: block;
+}
+	/* tabs along the top */
+	#case-tabs {
+		border: none;
+		list-style: none;
+		margin: 0;
+	}
+		#case-tabs li {
+			background: none;
+			margin: 0 0 0 1px;
+			padding: 0;
+		}
+		#case-tabs li:first-child { margin: 0; }
+			#case-tabs li a {
+				background: #e2dccf;
+				border: none;
+				 -webkit-border-radius: 10px 10px 0 0;
+				 -moz-border-radius: 10px 10px 0 0;
+				border-radius: 10px 10px 0 0;
+				color: #334b6d;
+				font-size: 24px;
+				font-weight: bold;
+				line-height: 28px;
+				margin: 0;
+				padding: 25px 29px 25px 30px;
+				width: 300px;
+			}
+				#case-tabs li a:hover {
+					background: #f3efe4;
+					cursor: pointer;
+				}
+	/* tabs along the top */
+	#case-content {
+		background: #e2dccf;
+		min-height: 511px;
+		padding: 50px 500px 340px 40px;
+	}
 		
 /* grid map on contact page */
 #map {
@@ -543,26 +599,9 @@ hgroup [class*="h"] {
 
 
 
-/* -------------------------------------
-	6. Page IDs
-   ------------------------------------- */
-/* focused positioning for random lines */
-#contact .line_pink01 {
-	 top: 693px;
-	 left: -360px;
-}
-#about .line_pink01 {
-	 top: 943px;
-	 left: -360px;
-}
-#work .line_pink01 {
-	 top: 441px;
-	 left: -360px;
-}
-
 
 /* -------------------------------------
-	7. Bootstrap Restyling
+	Bootstrap Restyling
    ------------------------------------- */
 /* scaffolding - overwrite */
 .container, 
@@ -599,6 +638,24 @@ hgroup [class*="h"] {
 .offset1 { margin-left: 110px; }
 
 /* general styling */
+.btn,
+.btn:focus {
+	background: #e9315d;
+	box-shadow: inset 0 -2px 0 rgba(0,0,0,0.2),
+				0 1px 5px -2px rgba(0,0,0,0.3);
+	color: #fff;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 15px 30px;
+	text-shadow: none;
+}
+	.btn:hover,
+	.btn:active {
+		background: #45486b;
+		color: #fff;
+		font-size: 18px;
+	}
+
 .hero-unit { /* used for the large intro areas */
 	background: none;
 	font-size: 15px;
@@ -618,6 +675,7 @@ hgroup [class*="h"] {
 		font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
 		text-decoration: underline;
 	}
+	
 #services .hero-unit {
 	position: relative;
 }
@@ -640,7 +698,8 @@ hgroup [class*="h"] {
 	margin-top: 56px;
 	margin-bottom: 115px;
 }
-#s-detail .navbar { margin-bottom: 48px; }
+#s-detail .navbar,
+#case .navbar { margin-bottom: 48px; }
 	.navbar-inner {
 		background: none;
 		border: none;

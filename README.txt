@@ -12,12 +12,12 @@ Pages completed so far:
 - contact.html
 - services.html
 - services/[detail] (x3)
-
-Working on:
 - working-with-navy.html
 
-To work on still:
+Working on:
 - case-studies.html
+
+To work on still:
 - case-studies/catch-on.html
 - case-studies/medibank.html
 - case-studies/whispir.html
