@@ -64,10 +64,20 @@
 	margin: 0 0 18px;
 	text-indent: -999em;
 }
+	.logo_anz {
+		background-position: -200px 0;
+		height: 31px;
+		width: 100px;
+	}
 	.logo_aus-gov {
 		background-position: 0 0;
 		height: 44px;
 		width: 166px;
+	}
+	.logo_coles {
+		background-position: -200px -60px;
+		height: 21px;
+		width: 74px;
 	}
 	.logo_medibank {
 		background-position: 0 -60px;
@@ -79,10 +89,25 @@
 		height: 37px;
 		width: 121px;
 	}
+	.logo_telstra {
+		background-position: -200px -120px;
+		height: 31px;
+		width: 27px;
+	}
 	.logo_whispir {
 		background-position: 0 -240px;
 		height: 43px;
 		width: 92px;
+	}
+	.logo_whispir-sml {
+		background-position: 0 -300px;
+		height: 40px;
+		width: 41px;
+	}
+	.logo_whispir-sml_colour {
+		background-position: -200px -180px;
+		height: 31px;
+		width: 33px;
 	}
 
 
@@ -133,12 +158,27 @@
 		 right: -360px;
 		width: 901px;
 	}
+	.line_navy02 {
+		background-image: url(../img/gr_stripe-navy-lt_02.png);
+		height: 192px;
+		 top: 2713px;
+		 left: -360px;
+		width: 540px;
+	}
 	.line_teal01 {
 		background-image: url(../img/gr_stripe-teal-glt_01.png);
 		height: 381px;
 		 bottom: -180px;
 		 right: -360px;
 		width: 1441px;
+		z-index: 90;
+	}
+	.line_teal02 {
+		background-image: url(../img/gr_stripe-teal-lt_02.png);
+		height: 129px;
+		 top: 697px;
+		 right: -360px;
+		width: 361px;
 		z-index: 90;
 	}
 .container { position: relative; }
@@ -191,6 +231,49 @@
 		display: block;
 		margin: 53px auto 0;
 	}
+	
+blockquote.plain {
+	border: none;
+	padding: 0;
+}
+.bubble {
+	background: url(../img/gr_bg-quote.png) right bottom;
+	color: #334b6d;
+	display: block;
+	margin: 0 0 20px 0;
+	padding: 0 0 24px;
+	width: 362px;
+}
+	.bubble > .inner {
+		background: url(../img/gr_bg-quote.png) 0 0;
+		padding: 25px 20px 20px;
+		width: auto;
+	}
+		.bubble p {
+			font-size: 15px;
+			line-height: 24px;
+		}
+.plain cite {
+	float: none;
+	overflow: hidden;
+	text-align: left;
+}
+	cite .profile {
+		float: left;
+		margin: 0 20px 0 0;
+	}
+	cite .who {
+		padding: 0 0 0 100px;
+	}
+		cite .who p {
+			color: #838178;
+			font-size: 15px;
+			margin: 0 0 10px;
+		}
+		cite .who .h6 {
+			color: #334b6d;
+			font-weight: bold;
+		}
 
 .info { min-height: 1010px; }
 [class*="sidebar_"] {
@@ -228,22 +311,6 @@
 	}
 		.sidebar_detail a { color: #9bdbec !important; }
 
-#work #content .header {
-	height: 165px;
-}
-	#work #content .header p {
-	}
-	#work #content .header .h5 {
-		font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
-		font-size: 18px;
-		margin-bottom: 15px;
-	}
-	#work #content .header .h1 {
-		font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
-		font-size: 34px;
-		margin-bottom: 15px;
-	}
-
 
 /* -------------------------------------
 	5. Specific Items
@@ -269,18 +336,41 @@ hgroup [class*="h"] {
 	margin: 0 0 15px;
 }
 .columned {}
-	.columned .span10 {
-		min-height: 260px;
+	.columned .span10 { min-height: 260px; }
+	.columned .span4 { min-height: 756px; }
+	.v-offset1 { margin-top: 126px; }
+		.columned .head { margin: 0 0 30px; }
+
+
+/* work with navy sections */
+.work-section {
+	height: 756px;
+}
+	.work-section .header {
+		/*min-height: 165px;*/
+		padding: 0 0 20px;
 	}
-	.columned .span4 {
-		min-height: 756px;
-	}
-	.v-offset1 {
-		margin-top: 126px;
-	}
-		.columned .head {
-			margin: 0 0 30px;
+		.work-section .header p {
 		}
+		.work-section .header .h5 {
+			font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
+			font-size: 18px;
+			margin-bottom: 15px;
+		}
+		.work-section .header .h1 {
+			font-family: 'akzidenz-grotesk_stdmedium', Helvetica, Arial, sans-serif;
+			font-size: 34px;
+			margin-bottom: 15px;
+		}
+	.work-section .pull-right {}
+		.work-section .pull-right.span4 {
+			margin-right: 20px;
+		}
+		.work-section .pull-right .polaroid {
+			float: right;
+		}
+
+
 /* branch timeline pathway on about page */
 #path {
 	background: url(../img/gr_path-start.gif) no-repeat center 0;
@@ -443,18 +533,14 @@ hgroup [class*="h"] {
 }
 	#map .tooltip {
 		background: url(../img/gr_bg-tooltip.png) right bottom;
-		display: block;
-		padding: 0 0 24px;
+		opacity: 1;
 		position: absolute;
 		 top: -20px;
 		 right: 50%;
 		width: 342px;
 	}
-		#map .tooltip > .inner {
-			background: url(../img/gr_bg-tooltip.png) 0 0;
-			padding: 25px 20px 20px;
-			width: auto;
-		}
+		#map .tooltip > .inner { background: url(../img/gr_bg-tooltip.png) 0 0;}
+
 
 
 /* -------------------------------------
