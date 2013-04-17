@@ -370,7 +370,7 @@ blockquote.plain {
 		content: "\00a0";
 		display: block;
 		height: 17px;
-		margin-left: -6px;
+		margin-left: -10px;
 		position: absolute;
 		 bottom: -8px;
 		 left: 50%;
@@ -678,6 +678,7 @@ hgroup [class*="h"] {
 }
 	#map .tooltip {
 		background: url(../img/gr_bg-tooltip.png) right bottom;
+		font-size: 14px;
 		opacity: 1;
 		position: absolute;
 		 top: -20px;
