@@ -1,0 +1,6 @@
+RewriteEngine On
+# RewriteRule   ^([A-Za-z0-9-]+)/?$  $1.html
+
+ 
+ RewriteCond %{REQUEST_FILENAME}.html -f
+ RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [L]
