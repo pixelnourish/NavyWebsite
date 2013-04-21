@@ -151,7 +151,7 @@ body {
 	overflow-x: hidden;
 }
 header {
-	background: transparent url(../img/bg_header-beige.gif) no-repeat center;
+	background: transparent url(../img/bg_header-beige.png) no-repeat center;
 	position: relative;
 }
 #content,
@@ -192,8 +192,9 @@ footer {
 /* -------------------------------------
 	3. Page IDs
    ------------------------------------- */
-html#home { background-color: #efe9db;}
-html#contact { background-color: #efe9db;}
+#home,
+[id*="case-"],
+#contact { background-color: #efe9db;}
 #home header {
 	background: url(../img/bg_header-home.png) no-repeat center 0;
 	color: #fff;
@@ -214,7 +215,6 @@ html#contact { background-color: #efe9db;}
 	position: relative;
 	z-index: 30;
 }
-
 #about header {
 	background-image: url(../img/bg_header-about.jpg);
 	position: relative;
@@ -226,7 +226,7 @@ html#contact { background-color: #efe9db;}
 	}
 #about #content {
 	background-color: #f3efe4;
-	background-image: url(../img/bg_tri-light_sml-grid.gif);
+	background-image: url(../img/bg_tri-light_sml-grid.png);
 	background-position: center 63px;
 	padding: 0 0 193px;
 }
@@ -257,10 +257,25 @@ html#contact { background-color: #efe9db;}
 	margin: -85px 0 0;
 	min-height: 882px;
 }
-#case-c header{
+#case-c header {
 	background: url(../img/bg_header-case_catchon.png) no-repeat center 0;
 	min-height: 757px;
 	padding: 0 0 251px;
+	position: relative;
+}
+[id*="case-"] #intro {
+	background: url(../img/bg_intro-beige_divide.png) no-repeat center bottom;
+	padding: 0 0 378px;
+}
+	[id*="case-"] #intro .bg {
+		background: url(../img/bg_tri-light_sml-grid.png) repeat center 0;
+		margin: -440px 0 0;
+		height: 504px;
+		padding: 440px 0 0;
+		/*position: relative;*/
+	}
+[id*="case-"] #content {
+	padding-top: 596px;
 }
 
 #work header {
@@ -300,7 +315,7 @@ html#contact { background-color: #efe9db;}
 	#s-detail #content { min-height: 1361px; }
 
 #contact header {
-	background: url(../img/bg_header-beige.gif) no-repeat center;
+	background: url(../img/bg_header-beige.png) no-repeat center;
 	min-height: 690px;
 	padding: 0 0 193px;
 	position: relative;

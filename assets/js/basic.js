@@ -20,3 +20,12 @@ $(document).ready(function() {
 	
 });
 
+jQuery(document).ready(function($) {
+	
+	$('.switch .switcher').click(function () {
+		$(this).parent().toggleClass('off');
+		$('#co_ipad-design').toggleClass('hide');
+	});
+
+});
+
