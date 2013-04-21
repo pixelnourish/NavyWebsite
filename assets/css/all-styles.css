@@ -131,6 +131,7 @@
 	text-indent: -999em;
 	width: 104px;
 }
+.light .navbar .logo,
 #home .navbar .logo { background-image: url(../img/gr_navy-logo_invert.png); }
 
 /* -------------------------------------
@@ -849,6 +850,11 @@ hgroup [class*="h"] {
 				line-height: 1em;
 				padding: 8px 9px 9px;
 				text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+				
+				 -webkit-transition: all ease 0.3s;
+				 -moz-transition: all ease 0.3s;
+				 -ms-transition: all ease 0.3s;
+				transition: all ease 0.3s;
 			}
 			.navbar .nav > li > a:focus, 
 			.navbar .nav > li > a:hover,
@@ -877,6 +883,20 @@ hgroup [class*="h"] {
 			#about .navbar .nav > .active > a:focus {
 				background: #beb398;
 				background: rgba(0,0,0,0.1);
+			}
+			
+			.light .navbar .nav > li > a {
+				color: #fff;
+				text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+			}
+			.light .navbar .nav > li > a:focus, 
+			.light .navbar .nav > li > a:hover,
+			.light .navbar .nav > .active > a, 
+			.light .navbar .nav > .active > a:hover, 
+			.light .navbar .nav > .active > a:focus {
+				background: #a3a3a3;
+				background: rgba(0,0,0,0.1);
+				color: #fff;
 			}
 .breadcrumb {
 	background: none;
