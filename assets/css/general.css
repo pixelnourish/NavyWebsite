@@ -126,6 +126,7 @@ p {
 	line-height: 1.6em /* 24px */;
 	margin: 0 0 0.95em 0;
 }
+.u { text-decoration: underline; }
 
 /* ul { list-style: disc; } */
 ol { list-style: decimal; }
@@ -255,6 +256,11 @@ html#contact { background-color: #efe9db;}
 	background-image: url(../img/bg_footer-blue02.gif);
 	margin: -85px 0 0;
 	min-height: 882px;
+}
+#case-c header{
+	background: url(../img/bg_header-case_catchon.png) no-repeat center 0;
+	min-height: 757px;
+	padding: 0 0 251px;
 }
 
 #work header {
