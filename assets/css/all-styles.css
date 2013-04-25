@@ -23,7 +23,7 @@
    ------------------------------------- */
 .mt20 { margin-top: 20px !important }
 .mt136 { margin-top: 136px !important }
-
+.mb30 { margin-bottom: 30px !important }
 .ml20 { margin-left: 20px !important }
 
 .pt70 { padding-top: 70px !important }
@@ -31,10 +31,12 @@
 .w430 { width: 430px }
 .w580 { width: 580px }
 
+/* heights are to assist in bg triangles lining up */
 .h270 { height: 270px }
 .h560 { height: 560px }
 .h580 { height: 580px }
 .h600 { height: 600px }
+.h715 { height: 715px }
 .h780 { height: 780px }
 .h940 { height: 940px }
 
@@ -61,18 +63,23 @@
 		margin: 0 5px 0 0;
 		width: 12px;
 	}
-	.ico_aud-catchon {
-		background-position: 0 -40px;
+	[class*="ico_aud-"] {
 		display: block;
 		height: 40px;
 		width: 40px;
 	}
-	.ico_tech-catchon {
-		background-position: 0 -80px;
+	[class*="ico_tech-"] {
 		display: block;
 		height: 40px;
 		width: 40px;
 	}
+	.ico_aud-catchon { background-position: 0 -40px; }
+	.ico_tech-catchon { background-position: 0 -80px; }
+	.ico_aud-medibank { background-position: -40px -40px; }
+	.ico_tech-medibank { background-position: -40px -80px; }
+	.ico_aud-whispir { background-position: -80px -40px; }
+	.ico_tech-whispir { background-position: -80px -80px; }
+	
 .sm.ico {
 	background: url(../img/ico_social.png) no-repeat;
 }
@@ -168,9 +175,10 @@ header .info {
 	border-radius: 10px;
 }
 	header .info > .inner {
-		color: #9bdbec;
 		padding: 20px 20px 30px;
 	}
+	#case-c header .info > .inner { color: #9bdbec; }
+	#case-m header .info > .inner { color: #80cdd3; }
 		header .info strong { color: #fff; }
 		header .info h2,
 		header .info h3 {
@@ -197,6 +205,7 @@ header .info {
 			}
 				header .info dd strong { display: block; }
 		header .info .logos { margin-bottom: 0; }
+		header .info i.pull-left { margin-right: 30px; }
 
 /* -------------------------------------
 	Content
@@ -221,6 +230,13 @@ header .info {
 		 top: 0;
 		 left: -360px;
 		width: 1082px;
+	}
+	.line_pink03 {
+		background-image: url(../img/gr_stripe-pink-lt_03.png);
+		height: 318px;
+		 top: 693px;
+		 right: -360px;
+		width: 901px;
 	}
 	.line_navy01 {
 		background-image: url(../img/gr_stripe-navy-lt_01.png);
@@ -284,6 +300,9 @@ header .info {
 	 left: auto;
 	 right: -360px;
 }
+#case-m .line_teal03 {
+	 top: 744px;
+}
 #work .line_pink01 {
 	 top: 441px;
 	 left: -360px;
@@ -319,7 +338,14 @@ header .info {
 	}
 
 .strat { height: 471px; }
-.strat .span4 { margin-top: -32px; }
+.strat > div:first-child { margin-top: -32px; }
+
+.hb-works {
+	height: ;
+}
+	.hb-works p {
+		width: 420px;
+	}
 
 .container { position: relative; }
 #home #content .container { padding-top: 108px; }
@@ -1174,10 +1200,18 @@ figure {
 		[id*="case-"] .breadcrumb a,
 		[id*="case-"] .breadcrumb > li > .divider,
 		[id*="case-"] .breadcrumb .active {
-			color: #9bdbec;
 			font-weight: normal;
 			text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
 		}
+		#case-c .breadcrumb a,
+		#case-c .breadcrumb > li > .divider,
+		#case-c .breadcrumb .active { color: #9bdbec; }
+		#case-m .breadcrumb a,
+		#case-m .breadcrumb > li > .divider,
+		#case-m .breadcrumb .active { color: #80cdd3; }
+		#case-w .breadcrumb a,
+		#case-w .breadcrumb > li > .divider,
+		#case-w .breadcrumb .active { color: #9bdbec; }
 
 .accordion {
 	margin-bottom: 20px;
