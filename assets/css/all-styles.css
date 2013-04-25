@@ -21,18 +21,28 @@
 /* -------------------------------------
 	Miscellaneous
    ------------------------------------- */
-.mt05 { margin-top: 5px !important }
-.mt10 { margin-top: 10px !important }
+.mt20 { margin-top: 20px !important }
+.mt136 { margin-top: 136px !important }
 
-.mr05 { margin-right: 5px !important }
-.mr10 { margin-right: 10px !important }
+.ml20 { margin-left: 20px !important }
 
+.pt70 { padding-top: 70px !important }
+
+.w430 { width: 430px }
+.w580 { width: 580px }
+
+.h270 { height: 270px }
+.h560 { height: 560px }
+.h580 { height: 580px }
 .h600 { height: 600px }
+.h780 { height: 780px }
+.h940 { height: 940px }
 
 .hide { display: none }
 .ltr { text-align: left }
 .rtl { text-align: right }
 .prel { position: relative }
+.centre { display: block; margin: 0 auto; }
 
 
 /* -------------------------------------
@@ -451,6 +461,7 @@ blockquote.plain {
 	 -moz-box-shadow: 0 1px 1px 1px rgba(145,142,132,0.4);
 	box-shadow: 0 1px 1px 1px rgba(145,142,132,0.4) /* #918e84 */;
 	display: block;
+	margin: 0 0 25px;
 	padding: 20px;
 }
 
@@ -724,7 +735,7 @@ hgroup [class*="h"] {
 		 left: 84px;
 	}
 /* ipad controls, includes generic switcher */
-#ipad-control {
+.ipad-control {
 	background: #fff;
 	 -webkit-border-radius: 10px;
 	 -moz-border-radius: 10px;
@@ -737,26 +748,19 @@ hgroup [class*="h"] {
 	 right: 0;
 	width: 360px;
 }
-	#ipad-control > .inner {
-		padding: 20px;
-	}
-		#ipad-control h3,
-		#ipad-control .h6 {
-			margin: 0 0 10px;
-		}
-		#ipad-control .switch {
-			overflow: hidden;
-		}
-			#ipad-control .switch > * {
-				float: left;
-			}
-			#ipad-control .label-d,
-			#ipad-control .label-s {
-				line-height: 40px;
-			}
-			#ipad-control .switcher {
-				margin: 0 20px;
-			}
+.ipad-control.pull-left {
+	top: 200px;
+	right: auto;
+	left: 20px; /* margin */
+}
+	.ipad-control > .inner { padding: 20px; }
+		.ipad-control h3,
+		.ipad-control .h6 { margin: 0 0 10px; }
+		.ipad-control .switch { overflow: hidden; }
+			.ipad-control .switch > * { float: left; }
+			.ipad-control .label-d,
+			.ipad-control .label-s { line-height: 40px; }
+			.ipad-control .switcher { margin: 0 20px; }
 			/* content switcher */
 			.switcher {
 				background: #f5274f;
@@ -945,11 +949,13 @@ hgroup [class*="h"] {
 .span8 { width: 700px; }
 .span7 { width: 610px; }
 .span6 { width: 520px; }
+.span5-5 { width: 450px; } /* used on 'catch on' page */
 .span5 { width: 430px; }
 .span4-5 { width: 360px; } /* used on case study pages: project summary */
 .span4 { width: 340px; }
 .span3 { width: 250px; }
 .span2 { width: 160px; }
+.span1-5 { width: 140px; } /* used on 'catch on' page */
 .span1 { width: 70px; }
 
 .offset11 { margin-left: 1010px; }
