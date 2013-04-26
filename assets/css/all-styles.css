@@ -85,12 +85,12 @@
 		height: 40px;
 		width: 40px;
 	}
-	.ico_aud-catchon { background-position: 0 -40px; }
-	.ico_tech-catchon { background-position: 0 -80px; }
-	.ico_aud-medibank { background-position: -40px -40px; }
-	.ico_tech-medibank { background-position: -40px -80px; }
-	.ico_aud-whispir { background-position: -80px -40px; }
-	.ico_tech-whispir { background-position: -80px -80px; }
+	.ico_aud-catchon { background-position: 0 -60px; }
+	.ico_tech-catchon { background-position: 0 -100px; }
+	.ico_aud-medibank { background-position: -40px -60px; }
+	.ico_tech-medibank { background-position: -40px -100px; }
+	.ico_aud-whispir { background-position: -80px -60px; }
+	.ico_tech-whispir { background-position: -80px -100px; }
 	
 .sm.ico {
 	background: url(../img/ico_social.png) no-repeat;
@@ -191,6 +191,7 @@ header .info {
 	}
 	#case-c header .info > .inner { color: #9bdbec; }
 	#case-m header .info > .inner { color: #80cdd3; }
+	#case-w header .info > .inner { color: #85caf8; }
 		header .info strong { color: #fff; }
 		header .info h2,
 		header .info h3 {
@@ -315,6 +316,9 @@ header .info {
 #case-m .line_teal03 {
 	 top: 744px;
 }
+#case-w .line_navy01 {
+	 top: 1323px;
+}
 #work .line_pink01 {
 	 top: 441px;
 	 left: -360px;
@@ -349,8 +353,30 @@ header .info {
 		width: 420px;
 	}
 
+/* header graphics on Whispir page */
+.w-globe {
+	background: url(../img/gr_dec-globe.png) no-repeat 0 0;
+	display: block;
+	height: 292px;
+	position: absolute;
+	 top: 803px;
+	 left: 578px;
+	width: 278px;
+}
+.w-blips {
+	background: url(../img/gr_dec-whispir-blips.png) no-repeat 0 0;
+	display: block;
+	height: 503px;
+	position: absolute;
+	 top: 362px;
+	 left: 542px;
+	width: 278px;
+}
+
 .strat { height: 471px; }
+#case-w .strat { margin-top: 110px; }
 .strat > div:first-child { margin-top: -32px; }
+#case-w .strat > div { margin-top: 0; }
 
 .hb-works { }
 	.hb-works p { width: 420px; }
@@ -773,7 +799,7 @@ hgroup [class*="h"] {
 		 top: 70px;
 		 left: 84px;
 	}
-/* ipad controls, includes generic switcher */
+/* ipad controls & video "explainer" (includes generic switcher within controls) */
 .ipad-control,
 .video-exp {
 	background: #fff;
@@ -795,6 +821,14 @@ hgroup [class*="h"] {
 	left: 20px; /* margin */
 }
 .video-exp.t215 { top: 215px; }
+
+#intro .video-exp {
+	margin-top: -25px;
+	position: relative;
+	 top: auto;
+	 left: auto;
+	 right: auto;
+}
 
 	.ipad-control > .inner,
 	.video-exp > .inner { padding: 20px; }
@@ -1232,7 +1266,7 @@ figure {
 		#case-m .breadcrumb .active { color: #80cdd3; }
 		#case-w .breadcrumb a,
 		#case-w .breadcrumb > li > .divider,
-		#case-w .breadcrumb .active { color: #9bdbec; }
+		#case-w .breadcrumb .active { color: #85caf8; }
 
 .accordion {
 	margin-bottom: 20px;
