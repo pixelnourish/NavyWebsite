@@ -33,12 +33,22 @@
 
 /* heights are to assist in bg triangles lining up */
 .h270 { height: 270px }
+.h374 { height: 374px }
 .h560 { height: 560px }
 .h580 { height: 580px }
 .h600 { height: 600px }
 .h715 { height: 715px }
+.h750 { height: 750px }
 .h780 { height: 780px }
+.h880 { height: 880px }
+.h890 { height: 890px }
 .h940 { height: 940px }
+.h1300 { height: 1300px }
+
+/* text colours */
+.navy { color: #334b6d }
+.pink { color: #ff2952 }
+.teal { color: #009ca6 }
 
 .hide { display: none }
 .ltr { text-align: left }
@@ -46,6 +56,8 @@
 .prel { position: relative }
 .centre { display: block; margin: 0 auto; }
 
+.sml { font-size: 13px }
+.bgr { font-size: 18px }
 
 /* -------------------------------------
 	Buttons & Icons
@@ -340,12 +352,8 @@ header .info {
 .strat { height: 471px; }
 .strat > div:first-child { margin-top: -32px; }
 
-.hb-works {
-	height: ;
-}
-	.hb-works p {
-		width: 420px;
-	}
+.hb-works { }
+	.hb-works p { width: 420px; }
 
 .container { position: relative; }
 #home #content .container { padding-top: 108px; }
@@ -489,6 +497,11 @@ blockquote.plain {
 	display: block;
 	margin: 0 0 25px;
 	padding: 20px;
+}
+
+/* video bits */
+img.video {
+	margin: 0 0 10px; 
 }
 
 /* about page speech bubbles */
@@ -761,7 +774,8 @@ hgroup [class*="h"] {
 		 left: 84px;
 	}
 /* ipad controls, includes generic switcher */
-.ipad-control {
+.ipad-control,
+.video-exp {
 	background: #fff;
 	 -webkit-border-radius: 10px;
 	 -moz-border-radius: 10px;
@@ -774,14 +788,21 @@ hgroup [class*="h"] {
 	 right: 0;
 	width: 360px;
 }
-.ipad-control.pull-left {
+.ipad-control.pull-left,
+.video-exp.pull-left {
 	top: 200px;
 	right: auto;
 	left: 20px; /* margin */
 }
-	.ipad-control > .inner { padding: 20px; }
+.video-exp.t215 { top: 215px; }
+
+	.ipad-control > .inner,
+	.video-exp > .inner { padding: 20px; }
 		.ipad-control h3,
-		.ipad-control .h6 { margin: 0 0 10px; }
+		.video-exp h3,
+		.ipad-control .h6,
+		.video-exp .h6 { margin: 0 0 10px; }
+		
 		.ipad-control .switch { overflow: hidden; }
 			.ipad-control .switch > * { float: left; }
 			.ipad-control .label-d,
