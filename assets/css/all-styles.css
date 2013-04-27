@@ -429,7 +429,23 @@ header .info {
 		display: block;
 		margin: 53px auto 0;
 	}
-	
+
+blockquote {
+	border: none;
+	color: #444b51;
+	padding: 0;
+}
+	blockquote p {
+		color: #444b51;
+		font-size: 18px;
+		margin: 0 0 15px;
+	}
+	cite {
+		color: #444b51;
+		font-size: 15px;
+		margin: 0 0 15px;
+	}
+
 blockquote.plain {
 	border: none;
 	padding: 0;
@@ -958,6 +974,11 @@ hgroup [class*="h"] {
 	#case-content #service,
 	#case-tabs .service.active a { background-color: #04949d; }
 		
+/* whispir case study popovers */
+.pop-content {
+	display: none;
+}
+
 /* grid map on contact page */
 #map {
 	background: url(../img/gr_map.png) no-repeat center;
@@ -1121,6 +1142,15 @@ figure {
 		position: absolute;
 		 top: 3px;
 		 right: 0;
+	}
+
+/* popover */
+.popover {
+	border: none;
+	max-width: 100%;
+}
+	.popover .popover-content {
+		width: 305px;
 	}
 
 /* navigation */

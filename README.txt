@@ -10,6 +10,7 @@ Pages completed so far:
 - about.html
 - case-studies.html
 - case-studies/catch-on.html
+- case-studies/medibank.html
 - contact.html
 - index.html
 - services.html
@@ -17,7 +18,7 @@ Pages completed so far:
 - working-with-navy.html
 
 Working on:
-- case-studies/medibank.html
+- case-studies/whispir.html
 
 To work on still:
-- case-studies/whispir.html
+nill

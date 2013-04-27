@@ -9,7 +9,7 @@
 				@ www.pixelnourish.com
 	------------------------------------	*/
 
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 	
 	// start bootstrap tabbed content
 	// used on the case-studies page
@@ -17,6 +17,22 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).tab('show');
 	})
+	
+	$('.pop-content').hide;
+	
+	$('a[rel=popover]')
+		.popover({
+			placement : 'top',
+			trigger : 'click', // can also be 'hover'
+			html : true, 
+			content: function() {
+				return $(this).next('.pop-content').html();
+			}
+		})
+		// .addClass(newClass)
+		.click(function(e) {
+			e.preventDefault()
+		})
 	
 });
 

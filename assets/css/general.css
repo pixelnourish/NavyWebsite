@@ -104,9 +104,9 @@ h3,
 		font-family: 'Helvetica W01 Bold', Helvetica, Arial, sans-serif;
 		line-height: 1.25em;
 	}
+	.h3 { font-family: 'Helvetica W01 Bold', Helvetica, Arial, sans-serif; }
 h4,
 .h4 { font-size: 16px; }
-	h4.h3 { font-family: 'Helvetica W01 Bold', Helvetica, Arial, sans-serif; }
 h5, .h5 { font-size: 18px; }
 h6, .h6 {
 	color: #334b6d;
