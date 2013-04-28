@@ -34,12 +34,15 @@
 /* heights are to assist in bg triangles lining up */
 .h270 { height: 270px }
 .h374 { height: 374px }
+.h415 { height: 415px }
 .h560 { height: 560px }
 .h580 { height: 580px }
 .h600 { height: 600px }
 .h715 { height: 715px }
 .h750 { height: 750px }
 .h780 { height: 780px }
+.h845 { height: 845px }
+.h850 { height: 850px }
 .h880 { height: 880px }
 .h890 { height: 890px }
 .h940 { height: 940px }
@@ -860,6 +863,18 @@ hgroup [class*="h"] {
 /* case studies tabbed content */
 #caseStudies { display: block; }
 
+/* image rows */
+.gr-row {
+	margin-bottom: 40px;
+}
+	.gr-row img {
+		float: left;
+		margin-left: 10px;
+	}
+	.gr-row img:first-child {
+		margin-left: 0;
+	}
+
 /* ipad */
 .ipad {
 	background: url(../img/bg_ipad-horiz.png) no-repeat 0 0;
@@ -896,6 +911,10 @@ hgroup [class*="h"] {
 	left: 20px; /* margin */
 }
 .video-exp.t215 { top: 215px; }
+#case-w .video-exp {
+	top: 81px;
+	left: 0;
+}
 
 #intro .video-exp {
 	margin-top: -25px;

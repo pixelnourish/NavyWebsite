@@ -301,6 +301,7 @@ footer {
 		}
 #case-w { background-position: center 126px; }
 #case-w #intro { background-image: url(../img/bg_intro-beige_divide02.png) }
+#case-w #content { padding-top: 32px; }
 #case-w header {
 	background: url(../img/bg_header-case_whispir.png) no-repeat center 0;
 	min-height: 757px;

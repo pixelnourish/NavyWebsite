@@ -11,6 +11,7 @@ Pages completed so far:
 - case-studies.html
 - case-studies/catch-on.html
 - case-studies/medibank.html
+- case-studies/whispir.html
 - contact.html
 - index.html
 - services.html
@@ -18,7 +19,7 @@ Pages completed so far:
 - working-with-navy.html
 
 Working on:
-- case-studies/whispir.html
+nill
 
 To work on still:
-nill
+Video elements
