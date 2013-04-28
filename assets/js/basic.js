@@ -29,7 +29,6 @@ jQuery(document).ready(function($) {
 				return $(this).next('.pop-content').html();
 			}
 		})
-		// .addClass(newClass)
 		.click(function(e) {
 			e.preventDefault()
 		})

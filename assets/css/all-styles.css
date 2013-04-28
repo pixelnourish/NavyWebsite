@@ -92,6 +92,14 @@
 	.ico_aud-whispir { background-position: -80px -60px; }
 	.ico_tech-whispir { background-position: -80px -100px; }
 	
+	.ico_plus {
+		background-position: -20px 0;
+		height: 41px;
+		margin: -23px 10px 0;
+		width: 41px;
+	}
+		a:hover .ico_plus { background-position: -80px 0; }
+	
 .sm.ico {
 	background: url(../img/ico_social.png) no-repeat;
 }
@@ -445,11 +453,11 @@ blockquote {
 		font-size: 15px;
 		margin: 0 0 15px;
 	}
-
 blockquote.plain {
 	border: none;
 	padding: 0;
 }
+
 .bubble {
 	background: url(../img/gr_bg-quote.png) right bottom;
 	color: #334b6d;
@@ -487,6 +495,57 @@ blockquote.plain {
 		cite .who .h6 {
 			color: #334b6d;
 			font-weight: bold;
+		}
+
+/* whispir popover element layout */
+.w-msg {
+	background: url(../img/gr_illus-community.png) no-repeat center 0;
+	height: 600px;
+	margin-top: 50px;
+	position: relative;
+	width: 1080px;
+}
+	.w-msg ul { list-style: none; }
+		.w-msg li {
+			background: none;
+			padding: 0;
+			position: absolute;
+		}
+			.w-msg .ttips {
+				display: block;
+				font-weight: bold;
+				height: 41px;
+				width: 343px;
+			}
+				.w-msg .ttips span {
+					display: inline-block;
+					width: 141px;
+				}
+		.w-msg .w-msg-sm {
+			top: 184px;
+			left: 0;
+		}
+			.w-msg .w-msg-sm span {
+				line-height: 40px;
+				text-align: right;
+			}
+			.w-msg .w-msg-sm .ico_plus { margin-top: -13px; }
+		.w-msg .w-msg-mc {
+			top: 330px;
+			left: 370px;
+		}
+		.w-msg .w-msg-ff {
+			top: 215px;
+			left: 737px;
+		}
+		.w-msg .w-msg-mmo {
+			top: 524px;
+			left: 0;
+		}
+			.w-msg .w-msg-mmo span { text-align: right; }
+		.w-msg .w-msg-paa {
+			top: 555px;
+			left: 737px;
 		}
 
 #s-detail #content .info { min-height: 1010px; }
@@ -975,9 +1034,13 @@ hgroup [class*="h"] {
 	#case-tabs .service.active a { background-color: #04949d; }
 		
 /* whispir case study popovers */
-.pop-content {
-	display: none;
+.pop-content { display: none; }
+.popover-content img { margin: 0 0 15px; }
+.popover-content p {
+	color: #334b6d;
+	margin: 0 0 15px;
 }
+	.popover-content p:last-child { margin: 0; }
 
 /* grid map on contact page */
 #map {
@@ -1148,9 +1211,17 @@ figure {
 .popover {
 	border: none;
 	max-width: 100%;
+	min-width: 340px;
 }
-	.popover .popover-content {
+	.popover-content {
+		padding: 20px;
 		width: 305px;
+	}
+	.popover.top .arrow {
+		border-top: none;
+	}
+	.popover-title {
+		display: none;
 	}
 
 /* navigation */
