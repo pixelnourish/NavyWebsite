@@ -43,7 +43,8 @@ h1, h2, h3, h4, h5,
 	font-weight: normal;
 	margin: 0 0 1.1em 0;
 	line-height: 1.2em;
-	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	text-shadow: none;
+	/*text-shadow: 0 1px 0 rgba(255,255,255,0.3);*/
 }
 h1, h2 { font-family: 'akzidenz-grotesk_std_regulaRg', Helvetica, Arial, sans-serif; }
 h3, h4, h5, h6 {
@@ -193,7 +194,7 @@ footer {
 /* -------------------------------------
 	3. Page IDs
    ------------------------------------- */
-#home,
+#home { background-color: #f3efe4;}
 [id*="case-"],
 #contact { background-color: #efe9db;}
 #home header {
@@ -210,7 +211,7 @@ footer {
 }
 #home footer {
 	background-image: url(../img/bg_footer-blue-beige_home.png);
-	min-height: 507px;
+	min-height: 509px;
 	/*margin: -250px 0 0;*/
 	padding: 250px 0 0;
 	position: relative;
