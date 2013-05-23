@@ -392,7 +392,9 @@ header .info {
 .hb-works { }
 	.hb-works p { width: 420px; }
 
-.container { position: relative; }
+.container {
+	position: relative;
+}
 #home #content .container { padding-top: 109px; }
 #home #content .container .row { 
 	position: relative;

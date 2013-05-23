@@ -371,18 +371,23 @@ footer {
 }
 @media (max-width: 1200px) and (min-width: 768px) {
 }
-@media (max-width: 1080px) {
-	html { background-position: 180px 0; }
-	body { overflow-x: auto; }
-	header { background-position: -360px 0; }
+@media (max-width: 1120px) {
+	html { background-position: 200px 0; }
+	body {
+		overflow-x: hidden;
+		width: 1120px;
+	}
+	header { background-position: -340px 0; }
 	#about header .bg,
 	#content,
-	footer { background-position: -360px bottom; }
+	footer { background-position: -340px bottom; }
+	
+	/*.container { padding: 0 20px; }*/
 	
 	#about #content { background-position: 0 0; }
 	
-	#subcontent {background-position: -360px 127px;}
-		#subcontent .bg { background-position: -360px top; }
+	#subcontent {background-position: -340px 127px;}
+		#subcontent .bg { background-position: -340px top; }
 }
 @media (max-width: 767px) {
 	body { padding: 0; }
